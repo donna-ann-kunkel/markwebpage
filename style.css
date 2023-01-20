@@ -1,0 +1,251 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* MAIN COLOR
+  main: #197278
+  greys: #283d3b
+  #edddd4
+    #3e504f
+  accent:#c44536
+  #772e25
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+
+body{
+  font-family: 'Lato', sans-serif;
+  color: #283d3b;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-left: 8rem;
+  padding-right: 8rem;
+ 
+}
+section{
+  margin-bottom: 8rem;
+  /* margin-left: 8rem; */
+}
+nav{
+  margin-bottom: 6.2rem;
+
+  
+}
+
+
+
+/* ------------------------ */
+/* COMPONENT STYLES */
+/* ------------------------ */
+
+/* ****************************** */
+/* HEADER */
+/* ****************************** */
+.nav--list{
+  display:flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 2rem;
+  border-radius: 10px;
+  font-size:1.8rem;
+  font-weight: 700;
+  
+}
+.nav--list--link:link, .nav--list--link:visited{
+  text-decoration: none;
+  color:#283d3b;
+ 
+}
+.nav--list--link:hover,.nav--list--link:active{
+  color:#772e25;
+  transition: all 0.3s;
+}
+
+
+.header--title{
+  display:flex;
+  align-items: center;
+  gap: 100px;
+  /* grid-template-columns: repeat(3,1fr); */
+  border-radius: 10px;
+  margin-bottom: 6.2rem;
+   color: #fff;
+    padding: 3rem 3rem 3rem 1.5rem;
+    background-color:#197278
+  
+}
+.header-background{
+  background-color:#edddd4;
+  padding-bottom: 8rem;
+}
+.header--name {
+  /* grid-column: 2/4;
+  grid-row: 1;
+  align-self: center;
+  justify-self: center; */
+  letter-spacing: -1px;
+}
+.header--name p{
+  margin-top: 1.8rem;
+}
+
+.header--img{
+  height:30rem;
+  transform: scale(1.3);
+     border-radius: 10px;
+     box-shadow: 10px 10px 30px rgba(0,0,0,0.3)
+ }
+
+
+
+.header--name p{
+  font-size: 3.6rem;
+    font-style: italic;
+}
+h1{
+  font-size: 7.4rem;
+  font-weight:700;
+}
+
+
+
+.nav--list--cv:link, .nav--list--cv:visited{
+  text-decoration: none;
+  color:#fff;
+  background-color: #c44536;
+  padding: 1.6rem 3.2rem;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.nav--list--cv:hover,
+.nav--list--cv:active {
+ background-color: #772e25
+}
+/* ****************************** */
+/* WORK EXPERIENCE*/
+/* ****************************** */
+.work {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4.8rem;
+  padding: 5.2rem 8rem;
+  color:#283d3b;;
+  font-size:2.4rem;
+  line-height: 1.5;
+  margin-bottom: 8rem;
+}
+.work h2{
+  margin-bottom: 2.4rem;
+  font-size: 3.6rem;
+  font-style: italic;
+  background: linear-gradient(to left, #197278, #edddd4 100%);
+    background-position: 0 100%;
+    background-size: 100% 1rem;
+    background-repeat: repeat-x;
+    
+}
+
+.work--list {
+  grid-column: 3/4;
+  font-weight:700;
+  color:#197278;
+  
+
+}
+.work--detailedlist{
+list-style: none;
+}
+.work--expandedtext{
+  grid-column: 1/3;
+  font-size:1.8rem;
+}
+/* SKILLS*/
+.skills{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  column-gap: 3.2rem;
+  row-gap:3.2rem;
+  margin-bottom: 8rem;
+}
+
+.skills--detail{
+  grid-column: 1 span 1;
+  box-shadow: 1rem 3rem 4rem 0 rgba(25, 114, 120, 0.1);
+  padding: 2rem;
+  line-height: 1.5;
+  border-radius: 10px;
+  
+}
+.skills h3{
+  color:#c44536;
+  margin-bottom: 0.4rem;
+  font-size:1.8rem;
+}
+.skills-icon{
+  width:2.4rem;
+  height:2.4rem;
+  margin-bottom: 1.2rem;
+}
+.skills p{
+  font-size:1.8rem;
+}
+/* EDUCATION*/
+.education{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 2.4rem;
+  padding:2.4rem;
+  border-radius: 10px;
+
+}
+
+.education--card{
+  grid-column:1 span 1;
+  font-size:1.8rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:3.6rem;
+  background-color: #e8f1f2;
+  border-radius: 12px;;
+}
+.education--card h3{
+  margin-bottom: 1.2rem;
+ line-height:1.2;
+ font-size:2.4rem;
+ font-weight: 700;
+
+}
+.education-year{
+ color: #3e504f;
+ 
+}
+.education-school{
+  color:#c44536;
+  font-weight: 700;
+}
+.education-background{
+  padding: 6.4rem 1.2rem;
+  background: linear-gradient(-45deg, rgba(25, 114, 120,1), rgba(237, 221, 212, 0.3) 100%);
+}
