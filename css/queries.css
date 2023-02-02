@@ -1,0 +1,94 @@
+
+/* ------------------------ */
+/* Less than 1104 px */
+/* ------------------------ */
+
+@media(max-width:69em){
+    html{
+        font-size:56.25%;
+    }
+    h1{
+        font-size:6.2rem;
+    }
+    .work{
+        column-gap:8rem;
+    }
+    .header--name p{
+        font-size:3rem;
+    }
+}
+/* ------------------------ */
+/*Less than 944 px */
+/* ------------------------ */
+
+@media(max-width:59em){
+    .header--title{
+        gap:8rem;
+        padding: 3.2rem 0;
+    }
+}
+/* ------------------------ */
+/*Less than 832 px */
+/* ------------------------ */
+
+
+@media(max-width:52em) {
+    html{
+        font-size:50%;
+    }
+    h1{
+        font-size:5.2rem;
+    }
+    .skills{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .work h2{
+        font-size:3rem;
+    }
+    .education--card{
+        padding:3rem;
+    }
+}
+/* ------------------------ */
+/*Less than 704 px */
+/* ------------------------ */
+@media(max-width:44em){
+    .header--title{
+        flex-direction:column-reverse;
+    }
+    .header--img{
+    transform:none;
+    }
+    .work{
+        grid-template-columns: 1fr;
+        margin-bottom: 3.2rem;
+    }
+    .work--list{
+        grid-row:2;
+        grid-column:1/2;
+    }
+    .work--expandedtext{
+        grid-column:1/-1;
+        margin-bottom:3.2rem;
+    }
+    .skills{
+        grid-template-columns: 1fr;
+    }
+    .education{
+        grid-template-columns: 1fr;
+        width:75%;
+        gap:3.2rem;
+    }
+}
+
+
+
+
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
