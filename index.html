@@ -4,17 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/queries.css" />
+   
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="js/script.js"></script>
+   
     <title>Marcus Webb</title>
   </head>
+
   <body>
     <div class="header-background">
       <header class="header container">
-        <nav class="nav--bar">
+        
+        <nav class="nav--bar ">
           <ul class="nav--list">
             <li>
               <a class="nav--list--link" href="#work">Work Experience</a>
@@ -33,25 +39,41 @@
             </li>
           </ul>
         </nav>
-        <div>
-        <div class="header--title">
-          <img 
-          class="header--img"
-          src="mark2.jpg"
-         
-          />
-          <div class="header--name">
-            <h1>Marcus Webb</h1>
-            <p>Machine Learning Engineer</p>
-          </div>
-          <div class="header--overlay"></div>
-        </div>
-        
-        </div>
-    
+        <button class="btn-mobile-nav">
+          <svg class="nav-icon" id="menu"xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+            viewBox="0 0 256 256">
+            <rect width="256" height="256" fill="none"></rect>
+            <line x1="40" y1="128" x2="216" y2="128" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="16"></line>
+            <line x1="40" y1="64" x2="216" y2="64" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="16"></line>
+            <line x1="40" y1="192" x2="216" y2="192" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="16"></line>
+          </svg>
+          <svg class="nav-icon" id="close" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+            viewBox="0 0 256 256">
+            <rect width="256" height="256" fill="none"></rect>
+            <line x1="200" y1="56" x2="56" y2="200" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="16"></line>
+            <line x1="200" y1="200" x2="56" y2="56" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="16"></line>
+          </svg>
+        </button>
       </header>
+      
       </div>
-
+      <main>
+        <section class="section-hero">
+          <div class="hero--title">
+            <img class="hero--img" src="mark2.jpg" />
+            <div class="hero--name">
+              <h1>Marcus Webb</h1>
+              <p>Machine Learning Engineer</p>
+            </div>
+            <div class="hero--overlay"></div>
+          </div>
+        
+        </section>
       <section class="work container" id="work">
           <div class="work--expandedtext">
             <h2>I deliver data science solutions.</h2>
@@ -188,7 +210,7 @@
         </div>
         </div>
       </section>
-
+</main>
    
   </body>
 </html>
